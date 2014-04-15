@@ -1,7 +1,23 @@
-## Put comments here that give an overall description of what your
-## functions do
+#  Author: Gabriella Zsebehazi
 
-## Write a short comment describing this function
+#  Coursera - R Programming
+#  Programming Assignment 2
+
+############################################################################
+
+# These functions serve to give the inverse of a matrix in an efficient way.
+# The inverse of a given matrix is computed only once, then the the value is
+# stored and is simply cached next time instead of recomputing.  
+
+###################################
+#      Function makeCacheMatrix
+###################################
+
+# This function creates a list, which contains 4 functions dedicated to
+#    1.) (set) store the given matrix 
+#    2.) (get) extract the value of matrix
+#    3.) (setsolve) store the inverse of matrix
+#    4.) (getsolve) extract the inverse of matrix    
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -20,7 +36,15 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+########################################
+#          Function cacheSolve
+########################################
+
+# This function searches the inverse of the matrix from the list created with the first function
+# and returns the value if it is exists. If the result is not available, the function 
+# extracts the matrix, computes the inverse, stores the result and prints it. 
+
+# The input of this function is the output list of the first function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
