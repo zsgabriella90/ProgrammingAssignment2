@@ -6,8 +6,8 @@
 ############################################################################
 
 # These functions serve to give the inverse of a matrix in an efficient way.
-# The inverse of a given matrix is computed only once, then the the value is
-# stored and is simply cached next time instead of recomputing.  
+# The inverse of a given matrix is computed only once, then the value is
+# stored and is simply cached next time instead of recomputing it.  
 
 ###################################
 #      Function makeCacheMatrix
@@ -15,7 +15,7 @@
 
 # This function creates a list, which contains 4 functions dedicated to
 #    1.) (set) store the given matrix 
-#    2.) (get) extract the value of matrix
+#    2.) (get) extract the matrix
 #    3.) (setsolve) store the inverse of matrix
 #    4.) (getsolve) extract the inverse of matrix    
 
@@ -41,7 +41,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ########################################
 
 # This function searches the inverse of the matrix from the list created with the first function
-# and returns the value if it is exists. If the result is not available, the function 
+# and returns the value if it exists. If the result is not available, the function 
 # extracts the matrix, computes the inverse, stores the result and prints it. 
 
 # The input of this function is the output list of the first function.
