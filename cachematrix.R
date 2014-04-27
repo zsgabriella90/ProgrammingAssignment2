@@ -40,11 +40,11 @@ makeCacheMatrix <- function(x = matrix()) {
 #          Function cacheSolve
 ########################################
 
-# This function searches the inverse of the matrix from the list created with the first function
+# This function searches the inverse of the matrix from the list created with the makeCacheMatrix function
 # and returns the value if it exists. If the result is not available, the function 
 # extracts the matrix, computes the inverse, stores the result and prints it. 
 
-# The input of this function is the output list of the first function.
+# The input of this function is the output list of the makeCacheMatrix function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
